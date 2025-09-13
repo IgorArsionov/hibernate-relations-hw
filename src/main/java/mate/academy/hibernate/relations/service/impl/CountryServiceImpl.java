@@ -20,6 +20,6 @@ public class CountryServiceImpl implements CountryService {
     @Override
     public Country get(Long id) {
         return dao.get(id).orElseThrow(() -> new DataProcessingException(
-                "<Entity> not found with id " + id));
+                "Country not found with id " + id));
     }
 }

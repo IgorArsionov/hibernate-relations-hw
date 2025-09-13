@@ -20,6 +20,6 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public Movie get(Long id) {
         return dao.get(id).orElseThrow(() -> new DataProcessingException(
-                "<Entity> not found with id " + id));
+                "Movie not found with id " + id));
     }
 }
